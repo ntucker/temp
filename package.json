@@ -1,0 +1,60 @@
+{
+  "name": "temp",
+  "version": "0.0.1",
+  "description": "temp - An Anansi project",
+  "scripts": {
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "npm run lint --fix",
+    "test:type": "tsc",
+    "start": "webpack serve --mode=development",
+    "start:prod": "serve dist",
+    "build": "webpack --mode=production",
+    "build:analyze": "webpack --mode=production --env analyze",
+    "build:profile": "webpack --mode=production --env profile",
+    "test:pkg": "webpack --env check=nobuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com//temp.git"
+  },
+  "bugs": {
+    "url": "https://github.com//temp/issues"
+  },
+  "homepage": "https://github.com//temp#readme",
+  "keywords": [
+    "anansi"
+  ],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "private": true,
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "@babel/core": "7.14.3",
+    "@anansi/babel-preset": "2.5.16",
+    "@anansi/eslint-plugin": "0.11.9",
+    "@anansi/browserslist-config": "1.2.0",
+    "typescript": "4.2.4",
+    "react-test-renderer": "17.0.2",
+    "react-refresh": "0.10.0",
+    "serve": "11.3.2",
+    "@types/react": "17.0.8",
+    "@types/react-dom": "17.0.5",
+    "@rest-hooks/test": "4.1.4",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack": "5.37.1",
+    "@anansi/webpack-config": "7.0.2"
+  },
+  "dependencies": {
+    "rest-hooks": "5.1.1",
+    "@rest-hooks/rest": "2.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}

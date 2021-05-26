@@ -1,0 +1,16 @@
+{
+  "@anansi/generator-js": {
+    "githubOrg": "",
+    "rootPath": "src",
+    "assetPath": "dist",
+    "appName": "temp",
+    "githubDomain": "github.com",
+    "testing": false,
+    "features": [],
+    "badges": "",
+    "spa": true,
+    "webpack": true,
+    "reactMode": "legacy",
+    "style": "sass"
+  }
+}
